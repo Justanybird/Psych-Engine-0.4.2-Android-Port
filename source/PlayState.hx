@@ -392,10 +392,11 @@ class PlayState extends MusicBeatState
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
-				}
-            case 'folder': //Week 1
+				
+				case 'folder': //Week 1
 				var folderbg:BGSprite = new BGSprite('folderbg', -600, -200, 0.9, 0.9);
 				add(folderbg);
+				}
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
