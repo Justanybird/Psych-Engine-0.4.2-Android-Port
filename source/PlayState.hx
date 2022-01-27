@@ -368,9 +368,9 @@ class PlayState extends MusicBeatState
 
 		switch (curStage)
 		{
-			case 'folder': //Week 1
-				var folderbg:BGSprite = new BGSprite('folderbg', -600, -200, 0.9, 0.9);
-				add(folderbg);
+			case 'stage': //Week 1
+				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
+				add(bg);
 
 				var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -392,7 +392,11 @@ class PlayState extends MusicBeatState
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
-				}
+				
+           case 'folder': //Week 1
+				var bg:BGSprite = new BGSprite('folderbg', -600, -200, 0.9, 0.9);
+				add(bg); 
+                }
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
